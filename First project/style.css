@@ -14,12 +14,22 @@ body{
 .image-container{
     display: flex;
     justify-content: center;
+    min-width: 290px;
+    /* width: 290px;
+    height: 300px; */
+}
+.image-container:hover{
+    background-color: black;
+    transform: scale(0.9);
+    opacity: 0.8;
+    cursor: pointer;
 }
 .qr-code {
     width: 290px;
     height: 300px;
     border-radius: 10px;
-    margin: 0 auto;
+    transition: .3s;
+    
 }
 .first-p{
     font-size: 20px;
@@ -35,4 +45,18 @@ body{
     text-align: center;
     color: hsl(220, 15%, 55%);
     margin-top: 7.5px;
+}
+.qr-code:hover {
+    transform: scale(0.9);
+    opacity: 0.8;
+    cursor: pointer;
+}
+.first-p:hover {
+    color: greenyellow;
+    cursor:pointer;
+
+}
+.sec-p:hover {
+    color: greenyellow;
+   cursor: pointer;
 }
